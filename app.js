@@ -13,6 +13,26 @@ app.get('/req', (req, res) => {
 })
 app.get("/meunome", (req, res) => {
   res.send("Meu nome é Pablo Vinicius Alves da Costa");
+
+//pokemons
+app.get("/pokemons", (req, res) => {
+  const pokemons = [
+    "Caterpie",
+    "Pidgeotto",
+    "Bulbasaur",
+    "Charmander",
+    "Squirtle",
+    "Krabby",
+    "Primeape",
+    "Muk",
+    "Tauros",
+    "Raticate"
+  ];
+
+  res.json({ pokemons });
+});
+
+
 });
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 

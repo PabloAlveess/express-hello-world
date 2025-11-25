@@ -34,9 +34,12 @@ app.get("/pokemons", (req, res) => {
   res.json({ pokemons });
 });
 
+// tico
+app.get("/tico", (req, res) => {
+  res.send("teco");
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-
 
 const html = `
 <!DOCTYPE html>

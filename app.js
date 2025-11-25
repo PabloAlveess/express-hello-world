@@ -39,6 +39,17 @@ app.get("/tico", (req, res) => {
   res.send("teco");
 });
 
+// series (POST)
+app.post("/series", (req, res) => {
+  const series = [
+    "Breaking Bad",
+    "The Boys",
+    "Dexter"
+  ];
+
+  res.json({ series });
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 const html = `
